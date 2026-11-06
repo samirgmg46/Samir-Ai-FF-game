@@ -1,3 +1,4 @@
+import os
 from flask import Flask, request, jsonify
 import requests
 from requests.exceptions import Timeout, RequestException
@@ -5,13 +6,11 @@ from requests.exceptions import Timeout, RequestException
 app = Flask(__name__)
 
 # ================= Configuration =================
-API_KEY_GROQ = ""
+# Securely load the API key from environment variables (No hardcoded keys!)
+API_KEY_GROQ = os.environ.get("GROQ_API_KEY")
 
-# Delete the previous line:
-# GROQ_MODEL = "llama-3.3-70b-versatile"
-
-# Paste the new line:
-GROQ_MODEL = "openai/gpt-oss-120b"
+# Use a valid Groq model
+GROQ_MODEL = "llama-3.3-70b-versatile"
 
 SYSTEM_PROMPT = """
 You are "Samir AI". You are a English AI assistant created by SAMIR.
@@ -98,7 +97,6 @@ def get_ai_response(user_prompt):
     }
 
     try:
-        # 8 seconds timeout — will work on both Vercel and Termux
         resp = requests.post(url, headers=headers, json=data, timeout=8)
 
         if resp.status_code != 200:

@@ -141,9 +141,6 @@ def ai_api():
     response_text = get_ai_response(user_query)
 
     return jsonify({
-        "status": "✨ Success",
-        "owner": "👑 SAMIR",
-        "telegram": "🔗 @samirgaming46",
         "answer": response_text
     })
 

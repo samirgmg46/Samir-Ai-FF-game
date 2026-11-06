@@ -144,7 +144,7 @@ def ai_api():
         "status": "✨ Success",
         "owner": "👑 SAMIR",
         "telegram": "🔗 @samirgaming46",
-        "reply": response_text
+        "answer": response_text
     })
 
 

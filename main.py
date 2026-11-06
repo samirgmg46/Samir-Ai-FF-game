@@ -7,7 +7,7 @@ app = Flask(__name__)
 
 # ================= Configuration =================
 # Securely load the API key from environment variables (No hardcoded keys!)
-API_KEY_GROQ = os.environ.get("GROQ_API_KEY")
+API_KEY_GROQ = os.environ.get("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")
 
 # Use a valid Groq model
 GROQ_MODEL = "llama-3.3-70b-versatile"

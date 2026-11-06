@@ -7,11 +7,8 @@ app = Flask(__name__)
 # ================= Configuration =================
 API_KEY_GROQ = "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"
 
-# Delete the previous line:
-# GROQ_MODEL = "llama-3.3-70b-versatile"
 
-# Paste the new line:
-GROQ_MODEL = "openai/gpt-oss-120b"
+GROQ_MODEL = "llama-3.3-70b-versatile"
 
 SYSTEM_PROMPT = """
 You are "Samir AI". You are a English AI assistant created by SAMIR.

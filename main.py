@@ -133,16 +133,15 @@ def ai_api():
     user_query = request.args.get('q')
 
     if not user_query:
-        return jsonify({
-            "status": "error",
-            "message": "Query parameter 'q' is missing!"
-        }), 400
+        return "Query parameter 'q' is missing!", 400
 
     response_text = get_ai_response(user_query)
 
-    return jsonify({
-        "answer": response_text
-    })
+    return app.response_class(
+        response=response_text,
+        status=200,
+        mimetype="text/plain"
+    )
 
 
 @app.route('/')

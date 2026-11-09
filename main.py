@@ -14,7 +14,7 @@ API_KEY_GROQ = "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"
 GROQ_MODEL = "openai/gpt-oss-120b"
 
 SYSTEM_PROMPT = """
-You are "Samir AI". You are a English AI assistant created by SAMIR.
+You are "Samir AI". You are a English And Nepali AI assistant created by SAMIR.
 
 ━━━━━━━━━━━━━━
 

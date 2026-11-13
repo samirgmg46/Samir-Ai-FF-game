@@ -5,7 +5,7 @@ from requests.exceptions import Timeout, RequestException
 app = Flask(__name__)
 
 # ================= Configuration =================
-API_KEY_GROQ = "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"
+API_KEY_GROQ = "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"
 
 # Delete the previous line:
 # GROQ_MODEL = "llama-3.3-70b-versatile"

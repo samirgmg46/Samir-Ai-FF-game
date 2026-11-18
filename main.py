@@ -5,8 +5,8 @@ from requests.exceptions import Timeout, RequestException
 app = Flask(__name__)
 
 # ================= Configuration =================
-API_KEY_GROQ = "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"
-
+API_KEY_GROQ = "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"
+#Only Gay Try to get Api key From here
 # Delete the previous line:
 # GROQ_MODEL = "llama-3.3-70b-versatile"
 
